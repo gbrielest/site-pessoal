@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: #1446a0;
+}
+
+h1 {
+  font-family: "Poppins";
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 570px;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cabecalho {
+  background-color: #e8eddf;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 122px;
+  padding-right: 122px;
+  box-shadow: rgb(0, 0, 0 ,0.5) 0 15px 48px 0;
+}
+
+.marca {
+  font-size: 64px;
+  font-weight: 800;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 448px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .cabecalho {
+    padding: 50px;
+  }
+
+  .menu ul {
+    width: 270px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cabecalho {
+    padding: 10px;
+    display: block;
+    height: 100%;
+    text-align: center;
+  }
+
+  .menu ul {
+    width: 100%;
+    display: block;
+  }
+
+  .marca {
+    font-size: 74px;
+  }
+
+  .menu ul a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+  }
+}
+
+.conteudo-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 122px;
+  padding-right: 122px;
+  min-height: 700px;
+}
+
+.coluna-texto,
+.coluna-foto {
+  width: 50%;
+  padding-top: 150px;
+}
+
+.texto-titulo {
+  font-size: 64px;
+  font-weight: 900;
+  font-family: "Roboto";
+  color: #e8eddf;
+}
+
+.texto-corpo {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Roboto";
+  line-height: 41px;
+  color: #e8eddf;
+  margin-top: 42px;
+  margin-bottom: 42px;
+}
+
+.botao-principal {
+  display: inline-block;
+  text-align: center;
+  padding: 25px 83px;
+  background-color: #f5d547;
+  border-radius: 8px;
+  font-size: 24px;
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.botao-principal:hover {
+  background: linear-gradient(
+    rgba(225, 225, 225, 0.2),
+    rgba(225, 225, 225, 0.2)
+  );
+  border: none;
+  color: #e8eddf;
+}
+
+.coluna-foto {
+  text-align: right;
+}
+
+.foto-perfil {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  box-shadow: #000 0 24px 48px 0;
+}
+
+.foto-perfil:hover {
+  transform: rotate(-6deg);
+}
+
+.fundo {
+  transform: translateX(37px) rotate(-6deg);
+  width: 500px;
+  height: 500px;
+  background-color: #f5d547;
+  position: absolute;
+  z-index: -10;
+}
+
+.redes-sociais {
+  display: flex;
+  margin-top: 76px;
+}
+
+.redes-sociais a {
+  font-size: 60px;
+  color: #04a777;
+  padding-right: 34px;
+}
+
+@media (max-width: 1399px) {
+  .texto-titulo {
+    font-size: 60px;
+  }
+
+  .foto-perfil {
+    width: 400px;
+    height: 400px;
+  }
+
+  .fundo {
+    width: 400px;
+    height: 400px;
+  }
+
+  .redes-sociais {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .texto-titulo {
+    font-size: 50px;
+  }
+
+  .foto-perfil {
+    width: 300px;
+    height: 300px;
+  }
+
+  .fundo {
+    width: 300px;
+    height: 300px;
+    transform: translate(50px) rotate(-6deg);
+  }
+
+  .texto-corpo {
+    line-height: 25px;
+    font-size: 20px;
+  }
+
+  .botao-principal {
+    padding: 27px 10px;
+    width: 100%;
+  }
+
+  .redes-sociais {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .foto-perfil {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
+
+  .fundo {
+    display: none;
+  }
+
+  .conteudo-principal {
+    flex-flow: column-reverse;
+    padding: 20px;
+  }
+
+  .coluna-foto {
+    text-align: center;
+  }
+
+  .coluna-foto,
+  .coluna-texto {
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  .texto-titulo {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .texto-corpo {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .redes-sociais {
+    margin-top: 50px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .redes-sociais a {
+    padding: 15px;
+  }
+}
