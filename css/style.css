@@ -165,6 +165,7 @@ h1 {
   );
   border: none;
   color: #e8eddf;
+  box-shadow: rgb(0, 0, 0 ,0.5) 0 15px 48px 0;
 }
 
 .coluna-foto {
@@ -176,10 +177,13 @@ h1 {
   height: 500px;
   object-fit: cover;
   box-shadow: #000 0 24px 48px 0;
+  filter: grayscale(0);
+  transition: all 0.8s ease;
 }
 
 .foto-perfil:hover {
   transform: rotate(-6deg);
+  filter: grayscale(0.5);
 }
 
 .fundo {
