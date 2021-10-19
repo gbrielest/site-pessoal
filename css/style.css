@@ -206,6 +206,12 @@ h1 {
   padding-right: 34px;
 }
 
+.redes-sociais a:hover {
+  font-size: 60px;
+  color: #e8eddf;
+  padding-right: 34px;
+}
+
 @media (max-width: 1399px) {
   .texto-titulo {
     font-size: 60px;
