@@ -59,7 +59,7 @@ h1 {
   align-items: center;
   padding-left: 122px;
   padding-right: 122px;
-  box-shadow: rgb(0, 0, 0 ,0.5) 0 15px 48px 0;
+  box-shadow: rgb(0, 0, 0, 0.5) 0 15px 48px 0;
 }
 
 .marca {
@@ -78,6 +78,11 @@ h1 {
   text-decoration: none;
   color: #000;
   font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+.menu ul li a:hover {
+  color: #1446a0;
 }
 
 @media (max-width: 768px) {
@@ -103,7 +108,7 @@ h1 {
     display: block;
   }
 
-  .marca {
+  .marca img {
     font-size: 74px;
   }
 
@@ -156,6 +161,7 @@ h1 {
   color: #000;
   font-weight: 500;
   text-decoration: none;
+  transition: all 1.5s ease;
 }
 
 .botao-principal:hover {
@@ -165,7 +171,7 @@ h1 {
   );
   border: none;
   color: #e8eddf;
-  box-shadow: rgb(0, 0, 0 ,0.5) 0 15px 48px 0;
+  box-shadow: rgb(0, 0, 0, 0.5) 0 15px 48px 0;
 }
 
 .coluna-foto {
@@ -204,6 +210,7 @@ h1 {
   font-size: 60px;
   color: #04a777;
   padding-right: 34px;
+  transition: all 1.5s ease;
 }
 
 .redes-sociais a:hover {
@@ -270,7 +277,8 @@ h1 {
     height: auto;
   }
 
-  .fundo {
+  .fundo,
+  .fundo-projetos {
     display: none;
   }
 
@@ -309,4 +317,56 @@ h1 {
   .redes-sociais a {
     padding: 15px;
   }
+
+  #campo {
+    top: 0px;
+    right: 100px;
+  }
+}
+
+#campo {
+  position: absolute;
+  top: 74px;
+  right: 100px;
+  display: none;
+}
+
+#campo input {
+  font-size: 18px;
+  border-radius: 2px;
+  padding: 5px;
+  border: 0;
+}
+
+.titulo-projeto {
+  font-size: 30px;
+  font-weight: bold;
+  color: #e8eddf;
+  margin-top: 42px;
+}
+
+.linha-seta {
+  text-align: right;
+}
+
+.linha-seta a {
+  margin-left: 50px;
+  font-size: 30px;
+  color: #e8eddf;
+  transition: all 1.5s ease;
+}
+
+.linha-seta a:hover {
+  font-size: 30px;
+  color: #04a777;
+  transition: all 1s ease;
+}
+
+.fundo-projetos {
+  transform: translateX(37px) rotate(-6deg);
+  width: 500px;
+  height: 500px;
+  background-color: #04a777;
+  position: absolute;
+  z-index: -10;
 }
