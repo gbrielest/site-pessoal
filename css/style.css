@@ -208,15 +208,13 @@ h1 {
 
 .redes-sociais a {
   font-size: 60px;
-  color: #04a777;
+  color: #f5d547;
   padding-right: 34px;
   transition: all 1.5s ease;
 }
 
 .redes-sociais a:hover {
-  font-size: 60px;
   color: #e8eddf;
-  padding-right: 34px;
 }
 
 @media (max-width: 1399px) {
@@ -229,7 +227,8 @@ h1 {
     height: 400px;
   }
 
-  .fundo {
+  .fundo,
+  .fundo-projetos {
     width: 400px;
     height: 400px;
   }
@@ -249,7 +248,8 @@ h1 {
     height: 300px;
   }
 
-  .fundo {
+  .fundo,
+  .fundo-projetos {
     width: 300px;
     height: 300px;
     transform: translate(50px) rotate(-6deg);
@@ -369,4 +369,67 @@ h1 {
   background-color: #04a777;
   position: absolute;
   z-index: -10;
+}
+
+.texto-contato a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transition: all 1s ease;
+}
+
+.texto-contato a:hover {
+  color: #b3001b;
+}
+
+.redes-sociais-contatos a {
+  color: #b3001b;
+}
+
+.redes-sociais-projetos a {
+  color: #04a777;
+}
+
+#formulario-contato input,
+#formulario-contato select,
+#formulario-contato textarea {
+  display: block;
+  width: 80%;
+  font-size: 16px;
+  font-family: 'Roboto';
+  padding: 5px;
+  margin: 2px;
+}
+
+#formulario-contato button {
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  background-color: #b3001b;
+  border: 1px solid #940117;
+  color: #e8eddf;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  display: block;
+  cursor: pointer;
+  transition: all 1.0s ease;
+}
+
+#formulario-contato button:hover {
+  background: linear-gradient(
+    rgba(225, 225, 225, 0.2),
+    rgba(225, 225, 225, 0.2)
+  );
+  border: none;
+  color: #e8eddf;
+  box-shadow: rgb(0, 0, 0, 0.5) 0 15px 48px 0;
+}
+
+.coluna-contato {
+  padding-left: 60px;
 }

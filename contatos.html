@@ -33,21 +33,37 @@
         </header>
         <main class="conteudo-principal">
             <div class="coluna-texto">
-                <h2 class="texto-titulo">Hey, eu sou a Gabriele</h2>
-                <p class="texto-corpo">
-                    Sou estudante de programação e ilustração digital 2D e fiz esse site para apresentar meus projetos
+                <h2 class="texto-titulo">Fale comigo 🥰</h2>
+                <p class="texto-corpo texto-contato">
+                    <a href="mailto:gabriele.stefani@outlook.com" target="blank"> gabriele.stefani@outlook.com</a>
+                    <br>
+                    ou me mande uma mensagem no <a
+                        href="http://api.whatsapp.com/send?5519993155039&text=Gostaria de mais informações"
+                        target="blank">whatsapp</a>!
                 </p>
-                <a href="#" class="botao-principal">Meus Projetos</a>
-                <ul class="redes-sociais">
-                    <li><a href="https://www.linkedin.com/in/gbrielest/" target="blank"><i class="fa fa-linkedin-square"></i></a></li>
-                    <li><a href="https://www.instagram.com/meutoque.art/" target="blank"><i class="fa fa-instagram"></i></a></li>
+                <ul class="redes-sociais redes-sociais-contatos">
+                    <li><a href="https://www.linkedin.com/in/gbrielest/" target="blank"><i
+                                class="fa fa-linkedin-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/meutoque.art/" target="blank"><i
+                                class="fa fa-instagram"></i></a></li>
                     <li><a href="https://github.com/gbrielest" target="blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.behance.net/gabrielest7531" target="blank"><i class="fa fa-behance-square"></i></a></li>
+                    <li><a href="https://www.behance.net/gabrielest7531" target="blank"><i
+                                class="fa fa-behance-square"></i></a></li>
                 </ul>
             </div>
-            <div class="coluna-foto">
-                <div class="fundo"></div>
-                <img src="images/gabriele.jpg" alt="Foto da Gabriele" class="foto-perfil">
+            <div class="coluna-foto coluna-contato">
+                <form id="formulario-contato">
+                    <input id="campo-nome" placeholder="Nome">
+                    <input id="campo-telefone" placeholder="Telefone">
+                    <select id="campo-assunto">
+                        <option value="Elogio">Elogio</option>
+                        <option value="Sugestão">Sugestão</option>
+                        <option value="Orçamento">Orçamento</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                    <textarea id="campo-mensagem" placeholder="Digite sua mensagem"></textarea>
+                    <button type="submit" id="botao-enviar">Enviar</button>
+                </form>
             </div>
         </main>
     </div>
